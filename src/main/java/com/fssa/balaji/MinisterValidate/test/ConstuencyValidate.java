@@ -1,6 +1,6 @@
-package com.fssa.balaji.dayobject.solved;
+package com.fssa.balaji.MinisterValidate.test;
 
-public class ProjectObjectValidate { 
+public class ConstuencyValidate { 
 
     public static boolean validate(Minister minister) throws IllegalArgumentException {
 
@@ -8,10 +8,10 @@ public class ProjectObjectValidate {
             throw new IllegalArgumentException("Argument is NULL");
         }
         
-        validateName(minister.getWinCantidateName());
+        validateName(minister.getWinCantidateName());//("stalin")
         validateConstuency(minister.getConstuencyName());
         validateDistrict(minister.getDistrict());
-        validateParties(minister.getParties());
+        validateParties(minister.getParties()); 
         validateCantidateVotes(minister.getCantidateVotes());
         validateTotalVotes(minister.getTotalVotesOfConstuency());
         validateExperience(minister.getExprience());
@@ -19,7 +19,7 @@ public class ProjectObjectValidate {
         return true; // Return true if validation passes
     }
  
-    private static void validateName(String name) {
+    private static void validateName(String name) {//name ="stalin"
         if (name == null || name.isEmpty() || !name.matches("[a-zA-Z]+")) {
         	
             throw new IllegalArgumentException("Minister name is required");

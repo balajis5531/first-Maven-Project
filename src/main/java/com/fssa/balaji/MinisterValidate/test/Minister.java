@@ -1,4 +1,4 @@
-package com.fssa.balaji.dayobject.solved;
+package com.fssa.balaji.MinisterValidate.test;
 
 public class Minister {
 
